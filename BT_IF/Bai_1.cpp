@@ -4,8 +4,7 @@
 int main(){
     int a, b, c, x1, x2, delta;
     printf("Nhap 3 so a, b, c :");
-    scanf("%d %d %d", &a, &b, &c);
-    printf("%d %d %d", &a, &b, &c);
+    scanf("%d %d %d", &a, &b, &c);;
     if (a == 0) {
         printf("Day khong phai phuong trinh bac hai.\n");
         return 0;
