@@ -17,7 +17,7 @@ int main(){
             printf("Phuong trinh co 2 nghiem phan biet: x1 = %.2lf, x2 = %.2lf", x1, x2 );
         }   else if (delta == 0) {
             x1 = -b/(2*a);
-            printf("Phuong trinh co 2 nghiem kep: x1 = %.2lf", x1);
+            printf("Phuong trinh co 2 nghiem kep: x = %.2lf", x1);
         }
             else if (delta < 0){
                 printf("Phuong trinh vo nghiem");
