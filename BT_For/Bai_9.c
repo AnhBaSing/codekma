@@ -7,12 +7,12 @@ int main() {
     printf("Nhap so n: ");
     scanf("%d", &n);
     
-    while (i <= n) {
+    while (i <= n) { //  2 < n
         int b = 1;
-        for (int j = 1; j <= i; j++) {
+        for (int j = 1; j <= i; j++) { // Steps to calculate factorial
             b *= j;
         }
-        sum += 1.0 / b;
+        sum += 1.0 / b; // Sum of factorials
         i++;
     }
     
