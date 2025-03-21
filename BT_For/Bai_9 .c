@@ -15,6 +15,7 @@ int main() {
         sum += 1.0 / b; // Sum of factorials
         i++;
     }
+    
     printf("Tong la %.5lf", sum);
     
     return 0;  // Added missing return statement
