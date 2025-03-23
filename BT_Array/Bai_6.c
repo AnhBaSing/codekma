@@ -9,10 +9,8 @@ int main(){
     }
     for (int i = 0; i < x; i++ ){
         if (a[i] < 0){
-            b[i] = 0;
-        } else {
-            b[i] = a[i];
+            a[i] = 0;
         }
-        printf("%d ", b[i]);
+        printf("%d ", a[i]);
     } 
 }    
