@@ -14,6 +14,6 @@ int main()
         temp += gdp*(speed/100.0); // Current GDP add to GDP's estimated growth rate in a year to display GDP in next year
         printf("%d\t%.2lf\n",nam,temp);
     }
-    while ( temp <= 2.0*gdp); // Print until meet requirement : GDP at some point must be equal to 2 times of GDP in 2014
+    while ( temp <= 2.0*gdp); // Print until meeting requirement : GDP at some point must be equal to 2 times of GDP in 2014
     return 0;
 }
