@@ -1,43 +1,56 @@
 #include <stdio.h>
 
-int main(){
-    int x, check, temp, alcheck;
-    
-    printf("Nhap mang so nguyen va cac so: ");
-    scanf("%d", &x);
-    
-    int a[x];  
-    int checked[x], checkedsize = 0; 
-
-    for (int i = 0; i < x; i++ ){
+int nhap_mang(int n, int a[]) {
+    for (int i = 0; i < n; i++) {
         scanf("%d", &a[i]);
     }
+    return 0;
+}
 
-    for (int i = 0; i < x; i++ ){
-        check = 0;
-        temp = a[i];
-        alcheck = 0;
+int count_occurrences(int n, int a[]) {
+    int counted[100] = {0}; // Array to mark counted numbers
+    int unique_numbers[100], unique_count = 0;
 
-        // Check if temp was already counted
-        for (int z = 0; z < checkedsize; z++ ){
-            if (checked[z] == temp){
-                alcheck = 1;
-                break;
-            }
-        }
-        if (alcheck) {
-            continue; // Skip already counted numbers
-        }
+    for (int i = 0; i < n; i++) {
+        if (counted[i]) continue; // Skip if already counted
 
-        // Count occurrences of temp
-        for (int j = 0; j < x; j++) {
-            if (a[j] == temp) {
-                check++;
+        int count = 1;
+        for (int j = i + 1; j < n; j++) {
+            if (a[i] == a[j]) {
+                count++;
+                counted[j] = 1; // Mark as counted
             }
         }
 
-        checked[checkedsize++] = temp; // Store counted number
-        
-        printf("So %d xuat hien trong mang %d lan\n", temp, check);
+        if (count == 1) {
+            unique_numbers[unique_count++] = a[i]; // Store unique numbers
+        } else {
+            printf("%d xuat hien %d lan.\n", a[i], count);
+        }
     }
+
+    // Print all unique numbers in one line
+    if (unique_count > 0) {
+        printf("Cac so xuat hien 1 lan: ");
+        for (int i = 0; i < unique_count; i++) {
+            printf("%d ", unique_numbers[i]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+int main() {
+    int a[100], n;
+
+    printf("Nhap so luong phan tu n (n <= 100): ");
+    scanf("%d", &n);
+    
+    printf("Nhap cac phan tu trong mang: ");
+    nhap_mang(n, a);
+
+    printf("Tan suat xuat hien cua cac so trong mang:\n");
+    count_occurrences(n, a);
+
+    return 0;
 }
