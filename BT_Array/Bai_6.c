@@ -3,7 +3,7 @@ int main(){
     int x,n=0;
     printf("Nhap mang so nguyen va cac so: ");
     scanf("%d", &x);
-    int a[x], b[x];
+    int a[x];
     for (int i = 0; i < x; i++ ){
         scanf("%d", &a[i]);
     }
