@@ -22,4 +22,5 @@ int main(){
             else if (delta < 0){
                 printf("Phuong trinh vo nghiem");
             }
+            return 0;
 }

@@ -18,4 +18,5 @@ int main()
     x2 = ((a*f)-(d*c))/D;
     printf("Nghiem cua he phuong trinh: x1 = %.2lf, x2 = %.2lf\n", x1, x2);
     }
+    return 0;
 }
