@@ -5,4 +5,5 @@ int main(){
     printf("Nhap ngay, thang, nam : ");
     scanf("%d, %d, %d", &ngay, &thang, &nam);
     printf("Thoi gian hien tai la %d/%d/%d", ngay, thang, nam);
+    return 0;
 } 
