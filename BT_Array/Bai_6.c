@@ -12,5 +12,6 @@ int main(){
             a[i] = 0;
         }
         printf("%d ", a[i]);
+    return 0;
     } 
 }    

@@ -19,4 +19,5 @@ int main(){
         }
     }
     printf("Trung binh cong cua mang la %.2lf\nTrung bing cong cua mang co so nguyen duong la %.2lf\nTrung binh cong cua mang co so nguyen am la %.2lf\n", med/x , medp/p, medn/n);
+    return 0;
 }

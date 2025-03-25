@@ -19,4 +19,5 @@ int main(){
         }
     }
     printf("Phan tu lon nhat la %d o vi tri %d\nPhan tu be nhat la %d o vi tri %d\n", max, l1, min, l2);
+    return 0;
 }    
