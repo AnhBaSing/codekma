@@ -8,4 +8,5 @@ int main(){
         sum += 1/i;
     }
     printf("Tong S la %.2lf", sum);
+    return 0;
 }

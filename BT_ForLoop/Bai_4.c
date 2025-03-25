@@ -5,4 +5,5 @@ int main(){
     a += b;
     }
     printf("Tong cua cac so le la %d ", a);
+    return 0;
 }

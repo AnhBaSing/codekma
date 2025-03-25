@@ -8,4 +8,5 @@ int main(){
         sum *= n;
     }
     printf("Gia tri giai thua %d! la %d\n", a, sum);
+    return 0;
 }

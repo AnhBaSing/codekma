@@ -13,4 +13,5 @@ int main(){
     } else {
         printf("%d khong phai la so hoan hao\n", n);
     }
+    return 0;
 }
