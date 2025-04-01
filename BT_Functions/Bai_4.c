@@ -11,7 +11,7 @@ void in(int a, int b, float matrix[a][b]) {
 void out(int a, int b, float matrix[a][b]) {
     for (int i = 0; i < a; i++) {
         for (int j = 0; j < b; j++) {
-            printf("%g ", matrix[i][j]);  // Fixed format specifier and removed '&'
+            printf("%g ", matrix[i][j]);  // Use %g because of float
         }
         printf("\n");
     }
